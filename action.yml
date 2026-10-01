@@ -1,0 +1,21 @@
+name: 'SEO Sentinel'
+description: 'Audit SEO otomatis setiap PR: broken links, meta tags, sitemap, performance. Free 50 URL, Pro 10k'
+author: 'DevOps Market'
+branding:
+  icon: 'search'
+  color: 'green'
+inputs:
+  url:
+    description: 'URL website'
+    required: true
+  max-urls:
+    description: 'Max URL di crawl'
+    required: false
+    default: '50'
+  fail-on-error:
+    description: 'Gagalkan PR jika SEO error'
+    required: false
+    default: 'true'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

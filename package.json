@@ -1,0 +1,10 @@
+{
+  "name": "seo-sentinel",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.7"
+  }
+}
